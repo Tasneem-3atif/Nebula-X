@@ -1,0 +1,711 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("./Fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./Fonts/RobotoCondensed-Italic-VariableFont_wght.ttf");
+  src: url("./Fonts/RobotoCondensed-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Beba";
+  src: url("./Fonts/BebasNeue-Regular.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.details,
+button {
+  cursor: pointer;
+}
+
+/* Start Landing page */
+.container {
+  position: absolute;
+  top: 3%;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  text-align: center;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+
+.home img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container p,
+.container button {
+  z-index: 1;
+}
+
+.container p {
+  top: 20px;
+  font-size: 1.5em;
+  color: black;
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.container button {
+  top: 60px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #f2f5fb;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.home img + p {
+  position: absolute;
+  top: 23%;
+  left: 63%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  text-align: left;
+  width: 31%;
+  font-weight: 700;
+  color: #262626;
+  font-family: sans-serif;
+}
+
+.search {
+  padding: 15px 15px 17px;
+  background-color: white;
+  box-shadow: 0 0 15px 0 #d0d0d081;
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  transform: translateX(-50%);
+  max-width: 30%;
+  max-width: 500px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  input {
+    border: none;
+    font-size: 24px;
+    outline: none;
+  }
+
+  i {
+    background-color: #8e00f0;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+}
+
+/* End Landing page */
+
+/* Start Our Work */
+
+.our-work {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10% 0;
+
+  p {
+    color: #888;
+    font-family: "roboto";
+    letter-spacing: -0.5px;
+    font-size: 18px;
+  }
+  .imgs-container {
+    filter: grayscale(100%);
+    img {
+      margin-left: 20px;
+      width: 80px;
+    }
+  }
+}
+
+/* End Our Work */
+
+/* Start Sell Products */
+.sell-products {
+  display: flex;
+  padding: 0 15%;
+  justify-content: space-between;
+
+  .txt {
+    width: 35%;
+    h4 {
+      color: #f2ca5a73;
+      font-family: "Roboto";
+      font-weight: 400;
+    }
+    h2 {
+      font-family: "Roboto";
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+      color: #333;
+      letter-spacing: 0.2rem;
+      font-weight: 900;
+    }
+    p {
+      font-family: "Roboto";
+      color: #555;
+    }
+    .details {
+      padding: 0.8%;
+      background: linear-gradient(50deg, #c63cf7, #6405a7);
+      margin-top: 20%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      span {
+        color: white;
+        font-family: "Oswald";
+        font-weight: 400;
+        letter-spacing: 2px;
+        margin: auto;
+      }
+      i {
+        background-color: white;
+        padding: 9px 15px;
+        border-radius: 40px;
+        color: #6405a7;
+        font-size: 30px;
+      }
+    }
+  }
+  img {
+    width: 60%;
+  }
+}
+/* End Sell Products */
+
+/* Start Cards Section */
+.cards-section {
+  position: relative;
+  margin: 10% 0;
+  .pattern {
+    position: absolute;
+    z-index: -1;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 2%;
+    flex-wrap: wrap;
+
+    .card {
+      background-color: #fff;
+      max-width: 300px;
+      box-shadow: 7px 15px 15px 0 #8d8d8d33;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 15% 0 0 0;
+      flex: 1 1 300px;
+
+      img {
+        max-width: 100%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+      h5 {
+        text-transform: uppercase;
+        font-family: system-ui;
+        font-weight: 600;
+        color: #333;
+        padding: 10px 20px;
+      }
+      p {
+        font-family: system-ui;
+        font-weight: 100;
+        color: #999999bd;
+        font-size: 17px;
+        padding: 0 20px;
+      }
+    }
+  }
+}
+/* End Cards Section */
+
+/* Start What We Do */
+.info {
+  display: flex;
+  padding: 0 15%;
+  justify-content: space-between;
+
+  .txt {
+    width: 35%;
+    h4 {
+      color: #f2ca5a73;
+      font-family: "Roboto";
+      font-weight: 400;
+    }
+    h2 {
+      font-family: "Roboto";
+      font-size: 2.1rem;
+      line-height: 2rem;
+      color: #333;
+      letter-spacing: 0.2rem;
+      letter-spacing: 0.2rem;
+      font-weight: 900;
+    }
+    p {
+      font-family: "Roboto";
+      color: #555;
+    }
+    .details {
+      padding: 0.8%;
+      background: linear-gradient(50deg, #c63cf7, #6405a7);
+      margin-top: 20%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      span {
+        color: white;
+        font-family: "Oswald";
+        font-weight: 400;
+        letter-spacing: 2px;
+        margin: auto;
+      }
+      i {
+        background-color: white;
+        padding: 9px 15px;
+        border-radius: 40px;
+        color: #6405a7;
+        font-size: 30px;
+      }
+    }
+  }
+  img {
+    width: 60%;
+  }
+}
+/* End What We Do */
+
+/* Start Contact */
+.contact {
+  position: relative;
+  .card {
+    background-color: white;
+    box-shadow: 5px 16px 20px -2px #8888882e;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 20%;
+    z-index: 1;
+    border-radius: 10px;
+    padding: 0 0 4%;
+    margin-top: 10%;
+
+    h3 {
+      font-family: sans-serif;
+      font-size: 2rem;
+      margin: 8%;
+    }
+
+    h3 + i {
+      position: absolute;
+      left: 16.5%;
+      top: 33.7%;
+      color: #999;
+    }
+
+    input {
+      border: none;
+      background-color: #eee;
+      border-radius: 15px;
+      padding: 5px 0 5px 37px;
+      width: 65%;
+    }
+
+    input + i {
+      position: absolute;
+      top: 43.5%;
+      left: 16.5%;
+      color: #999;
+    }
+
+    textarea {
+      border: none;
+      width: 65%;
+      height: 90px;
+      padding: 5px 0 0 35px;
+      margin: 2% 0 5%;
+      font-family: sans-serif;
+      border-radius: 16px;
+      background-color: #eee;
+    }
+
+    button {
+      padding: 3%;
+      background: linear-gradient(50deg, #c63cf7, #6405a7);
+      border: none;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      width: 50%;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+    }
+  }
+  img {
+    position: absolute;
+    right: 0;
+    top: -20%;
+    width: 30%;
+  }
+}
+/* End Contact */
+
+/**
+ *
+ *
+*/
+
+/* Media Queries */
+/* Large Screens */
+@media (max-width: 1200px) {
+  .container button {
+    padding: 12px 24px;
+    font-size: 0.9em;
+    margin-right: 20px;
+  }
+
+  /* End Landing page */
+}
+
+/* Mid Screens */
+@media (max-width: 991px) {
+  .container p {
+    font-size: 1.4em;
+  }
+
+  .container button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    margin-right: 20px;
+  }
+
+  .home img + p {
+    top: 73px;
+    right: 160px;
+    font-size: 2.5rem;
+    width: 40%;
+  }
+
+  .search {
+    padding: 15px;
+    top: 53%;
+    right: 5%;
+    input {
+      font-size: 18px;
+    }
+    i {
+      padding: 7px;
+      font-size: 18px;
+    }
+  }
+
+  /* End Landing page */
+  .sell-products {
+    padding: 0 10%;
+  }
+  /* End Sell Products */
+
+  .cards {
+    .card {
+      width: 200px;
+
+      h5 {
+        font-size: 12px;
+      }
+    }
+  }
+  /* End Cards Section */
+}
+
+/* Tab Screens */
+@media (max-width: 768px) {
+  .container p {
+    font-size: 1.2em;
+  }
+
+  .container button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .home img + p {
+    top: 10%;
+    font-size: 2rem;
+  }
+
+  .search {
+    padding: 10px;
+    top: 39%;
+    /* right: %; */
+    input {
+      font-size: 14px;
+    }
+  }
+  /* End Landing page */
+
+  .our-work .imgs-container img {
+    width: 50px;
+    margin-left: 10px;
+  }
+  /* End Our Work */
+
+  .sell-products {
+    padding: 0 10%;
+    flex-direction: column;
+    margin-top: 15%;
+    img {
+      width: 100%;
+    }
+    .txt {
+      margin: 0 0 10% 15%;
+      text-align: center;
+      h4 {
+        margin-left: 32%;
+        width: 112%;
+      }
+      h2 {
+        width: 193%;
+      }
+      p {
+        width: 210%;
+      }
+      .details {
+        width: 100%;
+        margin-left: 50%;
+      }
+    }
+  }
+  /* End Sell Products */
+
+  .cards {
+    margin-left: 50px;
+    .card {
+      flex: 1 1 250px;
+    }
+  }
+
+  /* End Cards Section */
+
+  .info {
+    padding: 0 10%;
+    flex-direction: column;
+    margin-top: 25%;
+    img {
+      width: 100%;
+    }
+    .txt {
+      margin: 0 0 10% 15%;
+      text-align: center;
+      h4 {
+        margin-left: 32%;
+        width: 112%;
+      }
+      h2 {
+        width: 193%;
+      }
+      p {
+        width: 210%;
+      }
+      .details {
+        width: 100%;
+        margin-left: 50%;
+      }
+    }
+  }
+  /* End What We Do */
+
+  .contact {
+    margin-bottom: 10%;
+
+    .card {
+      h3 + i {
+        top: 32%;
+      }
+      input + i {
+        top: 42%;
+      }
+      button {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  /* End Contact */
+}
+
+/* Phone Screens */
+@media (max-width: 480px) {
+  .container {
+    gap: 10px;
+    align-items: center;
+  }
+  .container p {
+    font-size: 1em;
+  }
+
+  .container button {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+
+  .home img + p {
+    top: 20%;
+    width: 65%;
+    left: 50%;
+    text-align: center;
+  }
+
+  .search {
+    top: 40%;
+    left: 50%;
+    width: 57%;
+  }
+  /* End Landing page */
+
+  .our-work {
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 60% 0 10% 0;
+    /* End Our Work */
+  }
+  /* End Our Work */
+
+  .sell-products {
+    padding: 0;
+    /* margin-top: 130px; */
+    text-align: center;
+    flex-wrap: wrap;
+    .txt {
+      margin: 0 0 0 31%;
+      h4 {
+        margin: 30px 0 20px;
+      }
+      h2 {
+        font-size: 3.5rem;
+        margin: 0 -30%;
+      }
+      p {
+        width: 200%;
+        margin-left: -50%;
+      }
+      .details {
+        margin: 25% 0 0 -20%;
+        width: 140%;
+      }
+    }
+    img {
+      width: 350px;
+      margin-top: 50px;
+    }
+  }
+  /* End Sell Products */
+  .pattern {
+    width: 100%;
+  }
+  .cards {
+    .card {
+      flex: 1 1 100%;
+      padding: 2%;
+      margin: 15% 0 0 0;
+    }
+  }
+  /* End Cards Section */
+
+  .info {
+    padding: 0 10%;
+    flex-direction: column;
+    margin-top: 25%;
+    img {
+      width: 100%;
+    }
+    .txt {
+      margin: 0 0 10% 15%;
+      text-align: center;
+      h4 {
+        margin-left: 32%;
+        width: 112%;
+      }
+      h2 {
+        width: 193%;
+      }
+      p {
+        width: 210%;
+      }
+      .details {
+        width: 190%;
+        margin-left: 0;
+      }
+    }
+  }
+  /* End What We Do */
+
+  .contact {
+    .card {
+      width: 90%;
+      left: 5%;
+      h3 + i {
+        top: 35%;
+      }
+      input + i {
+        top: 45%;
+      }
+      button {
+      }
+    }
+    img {
+      width: 70%;
+    }
+  }
+  /* End Contact */
+}
